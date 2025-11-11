@@ -34,7 +34,7 @@ export default function GalleryPage() {
             {galleryImages.map((image) => (
               <div key={image.id} className="relative group overflow-hidden rounded-lg h-64 cursor-pointer">
                 <img
-                  src={`/.jpg?height=300&width=300&query=${image.query}`}
+                  src={`/wing${image.id}${image.id <= 6 ? '.webp' : '.jpeg'}`}
                   alt={image.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />

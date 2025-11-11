@@ -9,7 +9,7 @@ export default function About() {
           {/* Image */}
           <div className="relative h-96 md:h-full rounded-lg overflow-hidden">
             <img
-              src="/spa-massage-therapist-professional-wellness.jpg"
+              src="/wing2.webp"
               alt="Wing Reflexology spa environment"
               className="w-full h-full object-cover rounded-lg"
             />

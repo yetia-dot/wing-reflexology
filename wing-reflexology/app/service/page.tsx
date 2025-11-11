@@ -110,7 +110,7 @@ export default function ServicesPage() {
               >
                 <div className={index % 2 === 1 ? "md:order-2" : ""}>
                   <img
-                    src={`/.jpg?height=400&width=400&query=${service.title.toLowerCase()} wellness massage`}
+                    src={`/wing${service.id}.webp`}
                     alt={service.title}
                     className="w-full rounded-lg"
                   />

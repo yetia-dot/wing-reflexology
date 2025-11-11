@@ -59,7 +59,7 @@ export default function Hero() {
           {/* Image */}
           <div className="relative h-96 md:h-full rounded-lg overflow-hidden">
             <img
-              src="/reflexology-foot-massage-spa-wellness-healing.jpg"
+              src="/wing1.webp"
               alt="Reflexology massage session"
               className="w-full h-full object-cover rounded-lg"
             />
