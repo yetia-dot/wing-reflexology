@@ -5,7 +5,7 @@
 
 :root {
   /* Beige and Brown Color Theme */
-  --card:#796b67 ;
+  --card:#e2e3d0 ;
   --card-foreground: oklch(1 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: #460a0e;
