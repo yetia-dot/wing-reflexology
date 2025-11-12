@@ -12,6 +12,7 @@ const detailedServices = [
     benefits: ["Improves circulation", "Reduces stress", "Promotes better sleep", "Relieves pain", "Boosts immunity"],
     duration: "60-90 minutes",
     icon: "🦶",
+    imageSrc: "/foot-reflexology.png",
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ const detailedServices = [
     ],
     duration: "30-45 minutes",
     icon: "👂",
+    imageSrc: "/hand-reflexology.png",
   },
   {
     id: 3,
@@ -42,6 +44,7 @@ const detailedServices = [
     ],
     duration: "45-60 minutes",
     icon: "💆",
+    imageSrc: "shoulder-massage.webp",
   },
   {
     id: 4,
@@ -51,6 +54,7 @@ const detailedServices = [
     benefits: ["Reduces inflammation", "Soothes sore muscles", "Improves flexibility", "Detoxifies", "Deep relaxation"],
     duration: "60-75 minutes",
     icon: "🌿",
+    imageSrc: "herbal-soak.webp",
   },
   {
     id: 5,
@@ -66,6 +70,7 @@ const detailedServices = [
     ],
     duration: "45-60 minutes",
     icon: "✨",
+    imageSrc: "pedicure.webp",
   },
   {
     id: 6,
@@ -81,6 +86,7 @@ const detailedServices = [
     ],
     duration: "15-30 minutes",
     icon: "🪑",
+    imageSrc: "wing7.jpeg",
   },
 ]
 
@@ -94,8 +100,8 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="heading-serif text-5xl md:text-6xl text-foreground mb-6">Our Services</h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            Explore our comprehensive range of reflexology and wellness services designed for your optimal health.
-          </p>
+At Wing Reflexology, every treatment is designed to restore balance and bring harmony to your body and mind.
+From targeted reflexology sessions to soothing spa treatments, our services blend traditional techniques with modern wellness practices — offering you a truly revitalizing experience in the heart of Bole, Addis Ababa.          </p>
         </div>
       </section>
 
@@ -110,7 +116,7 @@ export default function ServicesPage() {
               >
                 <div className={index % 2 === 1 ? "md:order-2" : ""}>
                   <img
-                    src={`/wing${service.id}.webp`}
+                    src={service.imageSrc}
                     alt={service.title}
                     className="w-full rounded-lg"
                   />
@@ -125,7 +131,7 @@ export default function ServicesPage() {
                     <ul className="space-y-2">
                       {service.benefits.map((benefit, i) => (
                         <li key={i} className="flex items-center gap-3 text-muted-foreground">
-                          <span className="w-2 h-2 rounded-full bg-primary flex-shrink-0"></span>
+                          <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
                           {benefit}
                         </li>
                       ))}

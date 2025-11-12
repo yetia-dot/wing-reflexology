@@ -8,7 +8,7 @@ import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card } from "@/components/ui/card"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin, Instagram } from "lucide-react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -62,7 +62,7 @@ export default function ContactPage() {
               >
                 +251 941 252 505
               </a>
-              <p className="text-muted-foreground mt-2">Available for calls and WhatsApp</p>
+              <p className="text-muted-foreground mt-2">Available for calls</p>
             </Card>
 
             {/* Email */}
@@ -176,7 +176,7 @@ export default function ContactPage() {
             {/* Right Column */}
             <div className="space-y-8">
               <div>
-                <h3 className="heading-serif text-3xl text-foreground mb-4">Hours of Operation</h3>
+                <h3 className="heading-serif text-3xl text-foreground mb-4">Working hours</h3>
                 <Card className="p-6 bg-card border-border">
                   <div className="space-y-3">
                     <div className="flex justify-between items-center">
@@ -209,23 +209,26 @@ export default function ContactPage() {
 
               <div>
                 <h3 className="heading-serif text-3xl text-foreground mb-4">Follow Us</h3>
-                <div className="flex gap-4">
+                <div className="flex gap-6">
                   <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-6 py-3 rounded-lg bg-card border border-border text-primary hover:bg-primary/5 transition-colors text-center font-semibold"
-                  >
-                    Instagram
-                  </a>
-                  <a
-                    href="https://tiktok.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-6 py-3 rounded-lg bg-card border border-border text-primary hover:bg-primary/5 transition-colors text-center font-semibold"
-                  >
-                    TikTok
-                  </a>
+              href="https://www.instagram.com/wing_reflexology?igsh=c2g3cGdrMXBpY3g3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-muted-foreground hover:text-primary transition-colors"
+            >
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+	<path fill="#3f2c26" d="M8 0C5.829 0 5.556.01 4.703.048C3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7C.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297c.04.852.174 1.433.372 1.942c.205.526.478.972.923 1.417c.444.445.89.719 1.416.923c.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417c.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046c.78.035 1.204.166 1.486.275c.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485c.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598c-.28.11-.704.24-1.485.276c-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598a2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485c-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486c.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276c.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92a.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217a4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334a2.667 2.667 0 0 1 0-5.334" />
+</svg>            </a>
+            <a
+  href="https://www.tiktok.com/@user9781406225921?_r=1&_t=ZM-91KUtNtQEUy"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+	<path fill="#3f2c26" d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+</svg>
+</a>
                 </div>
               </div>
             </div>

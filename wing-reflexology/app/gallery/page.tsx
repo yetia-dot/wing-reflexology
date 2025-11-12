@@ -22,8 +22,7 @@ export default function GalleryPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="heading-serif text-5xl md:text-6xl text-foreground mb-6">Gallery</h1>
           <p className="text-xl text-muted-foreground max-w-3xl">
-            Explore our serene spaces designed for your ultimate relaxation and healing.
-          </p>
+Step inside Wing Reflexology and explore our serene spaces, thoughtfully designed to help you unwind, rejuvenate, and experience total wellness.          </p>
         </div>
       </section>
 

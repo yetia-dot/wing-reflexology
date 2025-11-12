@@ -7,41 +7,41 @@ const services = [
     id: 1,
     title: "Foot Reflexology",
     description:
-      "Ancient healing technique that stimulates pressure points on your feet to promote overall wellness and balance throughout your body.",
+      "Stimulate natural healing and relieve tension through precise pressure points on your feet — improving circulation, balance, and total body wellness.",
     icon: "🦶",
   },
   {
     id: 2,
     title: "Hand & Ear Reflexology",
     description:
-      "Targeted therapy on your hands and ears to improve circulation, reduce pain, and enhance your natural healing abilities.",
+      "Experience deep relaxation and improved energy flow with gentle hand and ear reflexology that eases stress and promotes inner calm.",
     icon: "👂",
   },
   {
     id: 3,
     title: "Head & Shoulder Massage",
     description:
-      "Release tension and stress from your upper body with our professional massage techniques designed for deep relaxation.",
+      "Release built-up tension and soothe tired muscles with our signature head and shoulder massage — perfect for unwinding after a busy day.",
     icon: "💆",
   },
   {
     id: 4,
     title: "Herbal Soaking & Compression",
     description:
-      "Therapeutic herbal soak followed by targeted compression therapy to reduce inflammation and soothe tired muscles.",
+      "Indulge in the calming power of herbal blends that detoxify, soothe, and rejuvenate your skin while easing muscle stiffness.",
     icon: "🌿",
   },
   {
     id: 5,
     title: "Pedicure & Waxing",
     description:
-      "Premium foot care and waxing services to keep your feet and skin looking beautiful and feeling their best.",
+      "Pamper yourself with our professional pedicure and gentle waxing services — for soft, smooth, and refreshed skin.",
     icon: "✨",
   },
   {
     id: 6,
     title: "Chair Massage",
-    description: "Quick and effective massage while seated, perfect for busy schedules. Great for offices and events.",
+    description: "A quick yet deeply relaxing massage that melts away tension, boosts energy, and leaves you feeling recharged — ideal for busy days or travelers on the go.",
     icon: "🪑",
   },
 ]

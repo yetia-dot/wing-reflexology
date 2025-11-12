@@ -19,14 +19,15 @@ export default function About() {
           <div className="space-y-6">
             <div className="space-y-2">
               <p className="text-primary font-semibold tracking-wider uppercase text-sm">About Wing Reflexology</p>
-              <h2 className="heading-serif text-4xl text-foreground">Your Path to Wellness Starts Here</h2>
+              <h2 className="heading-serif text-4xl text-foreground">Your Path to Lasting Wellness & Inner Balance</h2>
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Wing Reflexology is dedicated to helping you achieve optimal health and wellness through the ancient
-              healing art of reflexology combined with modern therapeutic techniques. Our team of certified and
-              experienced practitioners provides personalized care in a serene, welcoming environment.
-            </p>
+              At Wing Reflexology, we believe true wellness begins with balance — of body, mind, and spirit.
+Located in the heart of Bole, Addis Ababa, our spa is a tranquil space where ancient reflexology meets modern relaxation.
+
+Our certified practitioners bring years of experience and deep expertise to every session, guiding you toward renewed energy, stress relief, and improved well-being.
+Whether you’re seeking therapeutic healing or a peaceful escape from daily life, we create a personalized experience designed just for you.</p>
 
             <div className="space-y-4">
               <div className="flex gap-4">
