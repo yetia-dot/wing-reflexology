@@ -14,7 +14,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <img src="/logo.png" alt="Wing Reflexology Logo" className="w-24 h-16 rounded-full" />
+            <img src="/logo.png" alt="Wing Reflexology Logo" className="w-20 h-24 rounded-full" />
           </Link>
 
           {/* Desktop Navigation */}

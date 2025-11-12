@@ -18,7 +18,7 @@ export default function ContactCTA() {
             {/* Contact Info */}
             <div className="space-y-4 pt-4">
               <div className="flex items-start gap-4">
-                <Phone className="w-6 h-6 flex-shrink-0 mt-1" />
+                <Phone className="w-6 h-6 shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold">Phone</p>
                   <a href="tel:+251941252505" className="opacity-90 hover:opacity-100 transition-opacity">
@@ -28,7 +28,7 @@ export default function ContactCTA() {
               </div>
 
               <div className="flex items-start gap-4">
-                <Mail className="w-6 h-6 flex-shrink-0 mt-1" />
+                <Mail className="w-6 h-6 shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold">Email</p>
                   <a
@@ -41,7 +41,7 @@ export default function ContactCTA() {
               </div>
 
               <div className="flex items-start gap-4">
-                <MapPin className="w-6 h-6 flex-shrink-0 mt-1" />
+                <MapPin className="w-6 h-6 shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold">Location</p>
                   <a

@@ -5,17 +5,17 @@
 
 :root {
   /* Beige and Brown Color Theme */
-  --card:#460a0e ;
+  --card:#796b67 ;
   --card-foreground: oklch(1 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: #460a0e;
-  --primary: #460a0e;
+  --primary: #3f2c26;
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: #460a0e;
+  --secondary: #52413c;
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: #460a0e;
+  --accent: #32231e;
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
@@ -36,7 +36,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --background: oklch(1 0 0);
+  --background: #fbfce7;
   --foreground: oklch(0.145 0 0);
 }
 
