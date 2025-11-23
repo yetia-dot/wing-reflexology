@@ -11,7 +11,6 @@ const detailedServices = [
       "Our most popular service, foot reflexology is an ancient healing technique that applies pressure to specific points on your feet, which correspond to different organs and systems in your body. This promotes relaxation, improves circulation, and supports your body's natural healing process.",
     benefits: ["Improves circulation", "Reduces stress", "Promotes better sleep", "Relieves pain", "Boosts immunity"],
     duration: "60-90 minutes",
-    icon: "🦶",
     imageSrc: "/foot-reflexology.png",
   },
   {
@@ -27,7 +26,6 @@ const detailedServices = [
       "No special clothing needed",
     ],
     duration: "30-45 minutes",
-    icon: "👂",
     imageSrc: "/hand-reflexology.png",
   },
   {
@@ -43,7 +41,6 @@ const detailedServices = [
       "Increases mobility",
     ],
     duration: "45-60 minutes",
-    icon: "💆",
     imageSrc: "shoulder-massage.webp",
   },
   {
@@ -53,7 +50,6 @@ const detailedServices = [
       "Experience the double benefit of our herbal soaking therapy followed by compression techniques. The healing herbs warm and relax your muscles while the compression promotes healing and reduces inflammation.",
     benefits: ["Reduces inflammation", "Soothes sore muscles", "Improves flexibility", "Detoxifies", "Deep relaxation"],
     duration: "60-75 minutes",
-    icon: "🌿",
     imageSrc: "herbal-soak.webp",
   },
   {
@@ -69,7 +65,6 @@ const detailedServices = [
       "Long-lasting effects",
     ],
     duration: "45-60 minutes",
-    icon: "✨",
     imageSrc: "pedicure.webp",
   },
   {
@@ -85,7 +80,6 @@ const detailedServices = [
       "Immediate relaxation",
     ],
     duration: "15-30 minutes",
-    icon: "🪑",
     imageSrc: "wing7.jpeg",
   },
 ]
@@ -122,7 +116,6 @@ From targeted reflexology sessions to soothing spa treatments, our services blen
                   />
                 </div>
                 <div className={index % 2 === 1 ? "md:order-1" : ""}>
-                  <div className="text-5xl mb-4">{service.icon}</div>
                   <h2 className="heading-serif text-4xl text-foreground mb-4">{service.title}</h2>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6">{service.description}</p>
 

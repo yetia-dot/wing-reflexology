@@ -29,7 +29,7 @@ Whether you seek deep healing or pure relaxation, our skilled therapists will gu
                 size="lg"
                 className="border-primary text-primary hover:bg-secondary/30 bg-transparent"
               >
-                <Link href="/services">View Services</Link>
+                <Link href="/service">View Services</Link>
               </Button>
             </div>
             
