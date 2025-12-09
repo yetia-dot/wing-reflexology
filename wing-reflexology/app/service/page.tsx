@@ -9,7 +9,6 @@ const detailedServices = [
     title: "Foot Reflexology",
     description:
       "Our most popular service, foot reflexology is an ancient healing technique that applies pressure to specific points on your feet, which correspond to different organs and systems in your body. This promotes relaxation, improves circulation, and supports your body's natural healing process.",
-    benefits: ["Improves circulation", "Reduces stress", "Promotes better sleep", "Relieves pain", "Boosts immunity"],
     duration: "60-90 minutes",
     imageSrc: "/foot-reflexology.png",
   },
@@ -18,13 +17,6 @@ const detailedServices = [
     title: "Hand & Ear Reflexology",
     description:
       "Perfect for those with limited mobility or time, hand and ear reflexology delivers the same benefits as foot reflexology through targeted pressure points on your hands and ears. These sessions are quick, effective, and wonderfully refreshing.",
-    benefits: [
-      "Quick and convenient",
-      "Reduces headaches",
-      "Improves focus",
-      "Balances energy",
-      "No special clothing needed",
-    ],
     duration: "30-45 minutes",
     imageSrc: "/hand-reflexology.png",
   },
@@ -33,13 +25,6 @@ const detailedServices = [
     title: "Head & Shoulder Massage",
     description:
       "Melt away tension from your neck, shoulders, and head with our therapeutic massage technique. Perfect for those who spend long hours at a desk or carry stress in their upper body.",
-    benefits: [
-      "Relieves tension headaches",
-      "Improves posture",
-      "Reduces neck stiffness",
-      "Promotes relaxation",
-      "Increases mobility",
-    ],
     duration: "45-60 minutes",
     imageSrc: "shoulder-massage.webp",
   },
@@ -48,7 +33,6 @@ const detailedServices = [
     title: "Herbal Soaking & Compression",
     description:
       "Experience the double benefit of our herbal soaking therapy followed by compression techniques. The healing herbs warm and relax your muscles while the compression promotes healing and reduces inflammation.",
-    benefits: ["Reduces inflammation", "Soothes sore muscles", "Improves flexibility", "Detoxifies", "Deep relaxation"],
     duration: "60-75 minutes",
     imageSrc: "herbal-soak.webp",
   },
@@ -57,13 +41,6 @@ const detailedServices = [
     title: "Pedicure & Waxing",
     description:
       "Keep your feet and skin looking beautiful and feeling their best with our premium pedicure and waxing services. We use high-quality products and careful techniques to ensure comfort and amazing results.",
-    benefits: [
-      "Beautiful foot appearance",
-      "Healthy skin",
-      "Professional results",
-      "Relaxing experience",
-      "Long-lasting effects",
-    ],
     duration: "45-60 minutes",
     imageSrc: "pedicure.webp",
   },
@@ -72,13 +49,6 @@ const detailedServices = [
     title: "Chair Massage",
     description:
       "Need quick wellness on your schedule? Our chair massage is performed while you remain seated and clothed, making it perfect for offices, events, or when time is limited.",
-    benefits: [
-      "Quick energy boost",
-      "Stress relief",
-      "No clothing required",
-      "Office-friendly",
-      "Immediate relaxation",
-    ],
     duration: "15-30 minutes",
     imageSrc: "wing7.jpeg",
   },
@@ -118,24 +88,9 @@ From targeted reflexology sessions to soothing spa treatments, our services blen
                 <div className={index % 2 === 1 ? "md:order-1" : ""}>
                   <h2 className="heading-serif text-4xl text-foreground mb-4">{service.title}</h2>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6">{service.description}</p>
-
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-foreground mb-3">Key Benefits:</h4>
-                    <ul className="space-y-2">
-                      {service.benefits.map((benefit, i) => (
-                        <li key={i} className="flex items-center gap-3 text-muted-foreground">
-                          <span className="w-2 h-2 rounded-full bg-primary shrink-0"></span>
-                          {benefit}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
                   <div className="flex items-center gap-4">
                     <span className="text-sm font-semibold text-primary">Duration: {service.duration}</span>
-                    <Button asChild className="bg-primary hover:bg-accent text-primary-foreground">
-                      <Link href="/contact">Book Now</Link>
-                    </Button>
+                    
                   </div>
                 </div>
               </div>
