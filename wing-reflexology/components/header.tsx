@@ -71,9 +71,7 @@ export default function Header() {
             <Link href="/contact" className="block px-4 py-2 text-foreground hover:bg-muted rounded transition-colors">
               Contact
             </Link>
-            <Button asChild className="w-full bg-primary hover:bg-accent text-primary-foreground mt-4">
-              <Link href="/contact">Book Now</Link>
-            </Button>
+            
           </nav>
         )}
       </div>
