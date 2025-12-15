@@ -1,3 +1,5 @@
+// app/contact/page.tsx
+
 "use client"
 
 import React, { useState } from "react"
@@ -5,6 +7,13 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import {Instagram, Send, MapPin, Mail } from "lucide-react"
+import emailjs from '@emailjs/browser'; // <-- NEW IMPORT
+
+// --- Email.js Configuration (REPLACE THESE TWO LINES) ---
+// These are not sensitive and can be placed here.
+const EMAILJS_SERVICE_ID = 'service_bmpjqeb'; 
+const EMAILJS_TEMPLATE_ID = 'template_ijr242k'; 
+// The Public Key is loaded securely from the .env.local file.
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -12,6 +21,9 @@ export default function ContactPage() {
     email: "",
     message: "",
   })
+  // NEW: State for tracking submission status and user feedback
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -21,8 +33,38 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
-    setFormData({ name: "", email: "", message: "" })
+    // Optional check to prevent resubmission while sending
+    if (status === 'sending') return;
+
+    setStatus('sending'); 
+
+    // Template parameters MUST match the variables you set up in your Email.js template
+    const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+    };
+
+    emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        {
+            // The public key is securely accessed from the environment variables
+            publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY, 
+        }
+    )
+    .then((response) => {
+       console.log('SUCCESS!', response.status, response.text);
+       setStatus('success'); // Set success status
+       setFormData({ name: "", email: "", message: "" }); // Clear form
+       // Optional: Revert status after 5 seconds
+       setTimeout(() => setStatus('idle'), 5000); 
+    }, (err) => {
+       console.log('FAILED...', err);
+       setStatus('error'); // Set error status
+       setTimeout(() => setStatus('idle'), 5000); 
+    });
   }
 
   return (
@@ -75,12 +117,22 @@ export default function ContactPage() {
               <Button
                 type="submit"
                 className="bg-secondary hover:bg-accent-200 text-background font-medium px-12 py-6 rounded-4 text-lg transition-all"
+                disabled={status === 'sending'} // Disable button while sending
               >
-                Send
+                {/* Dynamic button text based on status */}
+                {status === 'sending' ? 'Sending...' : 'Send'}
               </Button>
+              
+              {/* User Feedback Messages */}
+              {status === 'success' && (
+                <p className="text-green-500 font-semibold">Message sent successfully! We will be in touch soon.</p>
+              )}
+              {status === 'error' && (
+                <p className="text-red-500 font-semibold">Failed to send message. Please try again or call us.</p>
+              )}
             </form>
 
-            {/* Contact Info */}
+            {/* Contact Info (Social links updated with target="_blank" for best practice) */}
             <div className="space-y-8 text-gray-400">
               <div>
                 <h3 className="text-xs uppercase tracking-widest">Visit us</h3>
@@ -101,16 +153,16 @@ export default function ContactPage() {
               </div>
 
               <div className="flex gap-4">
-                <a href="https://www.instagram.com/wing_reflexology?igsh=c2g3cGdrMXBpY3g3" className="hover:text-primary transition">
+                <a href="https://www.instagram.com/wing_reflexology?igsh=c2g3cGdrMXBpY3g3" className="hover:text-primary transition" target="_blank" rel="noopener noreferrer">
                   <Instagram className="h-5 w-5" />
                 </a>
-                <a   href="https://www.tiktok.com/@user9781406225921?_r=1&_t=ZM-91KUtNtQEUy" className="hover:text-primary transition">
+                <a   href="https://www.tiktok.com/@user9781406225921?_r=1&_t=ZM-91KUtNtQEUy" className="hover:text-primary transition" target="_blank" rel="noopener noreferrer">
                   <Send className="h-5 w-5" />
                 </a>
                 <a href="mailto:Wingreflexology@gmail.com"  className="hover:text-primary transition">
                   <Mail className="h-5 w-5" />
                 </a>
-                <a href="https://share.google/1ikpGMJ4Ni3QLVE1V" className="hover:text-primary transition">
+                <a href="https://share.google/1ikpGMJ4Ni3QLVE1V" className="hover:text-primary transition" target="_blank" rel="noopener noreferrer">
                   <MapPin className="h-5 w-5" />
                 </a>
               </div>
