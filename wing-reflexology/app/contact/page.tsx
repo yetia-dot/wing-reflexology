@@ -12,7 +12,7 @@ import emailjs from '@emailjs/browser'; // <-- NEW IMPORT
 // --- Email.js Configuration (REPLACE THESE TWO LINES) ---
 // These are not sensitive and can be placed here.
 const EMAILJS_SERVICE_ID = 'service_bmpjqeb'; 
-const EMAILJS_TEMPLATE_ID = 'template_ijr242k'; 
+const EMAILJS_TEMPLATE_ID = 'template_4jqy84a'; 
 // The Public Key is loaded securely from the .env.local file.
 
 export default function ContactPage() {
