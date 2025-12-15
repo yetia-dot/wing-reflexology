@@ -16,7 +16,7 @@ const FINAL_HOST = 'https://www.wingreflexology.com';
 export const metadata: Metadata = {
   metadataBase: new URL(FINAL_HOST), 
   applicationName: "Wing Reflexology",
-  title: "Wing Reflexology - Holistic Wellness & Massage Services",
+  title: "Wing Reflexology",
   description:
     "Experience premium reflexology, massage, and wellness services at Wing Reflexology. Foot reflexology, hand & ear reflexology, head & shoulder massage, and more.",
   verification:{
