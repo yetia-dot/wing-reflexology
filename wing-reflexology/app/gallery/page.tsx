@@ -1,6 +1,6 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-
+import Image from "next/image"
 const galleryImages = [
   { id: 1, title: "Relaxation Room", query: "spa relaxation room massage therapy" },
   { id: 2, title: "Treatment Area", query: "professional spa treatment area" },
@@ -35,10 +35,7 @@ Step inside Wing Reflexology and explore our serene spaces, thoughtfully designe
                 <Image
   src={`/wing${image.id}${image.id <= 6 ? '.webp' : '.jpeg'}`}
   alt={image.title}
-  // Use 'fill' because the parent container (which I assume is present) 
-  // determines the image's dimensions via CSS (w-full h-full).
   fill={true} 
-  // Added sizes for performance optimization when using fill
   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
   className="object-cover group-hover:scale-105 transition-transform duration-300"
 />
