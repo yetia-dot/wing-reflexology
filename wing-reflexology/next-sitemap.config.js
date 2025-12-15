@@ -3,4 +3,5 @@
 module.exports = {
   siteUrl: 'https://wing-reflexology.com', // CORRECT
   generateRobotsTxt: true,
+  outDir: './out',
 };
