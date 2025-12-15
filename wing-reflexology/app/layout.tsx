@@ -14,30 +14,16 @@ const inter = Inter({ subsets: ["latin"] })
 const FINAL_HOST = 'https://www.wingreflexology.com'; 
 
 export const metadata: Metadata = {
-  // 💡 2. USE THE HARDCODED URL
   metadataBase: new URL(FINAL_HOST), 
-
+  applicationName: "Wing Reflexology",
   title: "Wing Reflexology - Holistic Wellness & Massage Services",
   description:
     "Experience premium reflexology, massage, and wellness services at Wing Reflexology. Foot reflexology, hand & ear reflexology, head & shoulder massage, and more.",
-  generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/favicon.ico", 
+    apple: "/apple-touch-icon.png",
   },
+  manifest: "/site.webmanifest",
 }
 
 export default function RootLayout({
