@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-
+import Image from "next/image";
 export default function About() {
   return (
     <section className="py-20 bg-secondary/10">
@@ -8,11 +8,13 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="relative h-96 md:h-full rounded-lg overflow-hidden">
-            <img
-              src="/wing2.webp"
-              alt="Wing Reflexology spa environment"
-              className="w-full h-full object-cover rounded-lg"
-            />
+            <Image
+  src="/wing2.webp"
+  alt="Wing Reflexology spa environment"
+  fill={true} 
+  sizes="(max-width: 768px) 100vw, 50vw"
+  className="object-cover rounded-lg"
+/>
           </div>
 
           {/* Content */}

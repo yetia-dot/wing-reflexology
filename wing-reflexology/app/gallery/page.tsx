@@ -32,11 +32,16 @@ Step inside Wing Reflexology and explore our serene spaces, thoughtfully designe
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {galleryImages.map((image) => (
               <div key={image.id} className="relative group overflow-hidden rounded-lg h-64 cursor-pointer">
-                <img
-                  src={`/wing${image.id}${image.id <= 6 ? '.webp' : '.jpeg'}`}
-                  alt={image.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+                <Image
+  src={`/wing${image.id}${image.id <= 6 ? '.webp' : '.jpeg'}`}
+  alt={image.title}
+  // Use 'fill' because the parent container (which I assume is present) 
+  // determines the image's dimensions via CSS (w-full h-full).
+  fill={true} 
+  // Added sizes for performance optimization when using fill
+  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+  className="object-cover group-hover:scale-105 transition-transform duration-300"
+/>
                 <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <h3 className="text-white font-semibold text-lg">{image.title}</h3>
                 </div>

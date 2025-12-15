@@ -1,6 +1,7 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Card } from "@/components/ui/card"
+import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -21,11 +22,12 @@ Discover our story, mission, and the dedicated team behind your wellness journey
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div>
-<img
-              src="/wing2.webp"
-              alt="Wing Reflexology spa environment"
-              className="w-full h-full object-cover rounded-lg"
-            />            </div>
+<Image 
+  src="/wing2.webp"
+  alt="Wing Reflexology spa environment"
+  width={150} 
+  height={50}
+/>      </div>
             <div className="space-y-6">
               <h2 className="heading-serif text-4xl text-foreground">Our Story</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
