@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   title: "Wing Reflexology - Holistic Wellness & Massage Services",
   description:
     "Experience premium reflexology, massage, and wellness services at Wing Reflexology. Foot reflexology, hand & ear reflexology, head & shoulder massage, and more.",
+  verification:{
+    google: "Dq3byoJAGuxCbnuDG1dGm_q5gTqHLX"},
   icons: {
     icon: "/favicon.ico", 
     apple: "/apple-touch-icon.png",
