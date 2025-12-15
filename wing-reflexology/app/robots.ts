@@ -1,6 +1,5 @@
+// app/robots.ts
 import { MetadataRoute } from "next";
-
-export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -8,6 +7,5 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.wingreflexology.com/sitemap.xml",
-  };
+};
 }
