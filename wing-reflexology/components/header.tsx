@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
-
+import Image from "next/image"
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -14,7 +14,13 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <img src="/logo.png" alt="Wing Reflexology Logo" className="w-20 h-24 rounded-full" />
+            <Image
+  src="/logo.png"
+  alt="Wing Reflexology Logo"
+  width={80} 
+  height={96} 
+  className="rounded-full" 
+/>
           </Link>
 
           {/* Desktop Navigation */}
