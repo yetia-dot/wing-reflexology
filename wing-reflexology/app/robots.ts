@@ -1,7 +1,8 @@
 // app/robots.ts
+
 import { MetadataRoute } from "next";
 
-export const dynamic = "force-static"; 
+export const dynamic = "force-static"; // Required due to static export
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -9,6 +10,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    // Keep the sitemap entry removed, as the fix in layout.tsx should handle it.
+    // 💡 RE-ADD THE SITEMAP URL EXPLICITLY
+    sitemap: "https://www.wingreflexology.com/sitemap.xml", 
   };
 }

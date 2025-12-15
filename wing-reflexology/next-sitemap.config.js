@@ -1,6 +1,6 @@
+// next-sitemap.config.js 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://wing-reflexology.com', // or your domain later
+  siteUrl: 'https://wing-reflexology.com', // CORRECT
   generateRobotsTxt: true,
-  // outDir: './public', // <- ensures sitemap.xml & robots.txt are copied to public
 };
