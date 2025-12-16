@@ -22,7 +22,7 @@ export default function ContactCTA() {
                 <div>
                   <p className="font-semibold">Phone</p>
                   <a href="tel:+251911266475" className="opacity-90 hover:opacity-100 transition-opacity">
-                    +251 941 252 505
+                    +251 911 266 475
                   </a>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export default function ContactCTA() {
               size="lg"
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 w-full md:w-auto"
             >
-              <a href="tel:+251911266475">Call +251 941 252 505</a>
+              <a href="tel:+251911266475">Call +251 911 266 475</a>
             </Button>
             <Button
               asChild
