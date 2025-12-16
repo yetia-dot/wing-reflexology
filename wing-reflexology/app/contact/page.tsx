@@ -146,7 +146,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-xs uppercase tracking-widest ">Talk to us</h3>
                 <p className="text-primary leading-relaxed text-lg">
-                  +251941252505
+                  +251911266475
                   <br />
                   wingreflexology@gmail.com
                 </p>
